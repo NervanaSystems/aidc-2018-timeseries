@@ -31,7 +31,10 @@ As expected, predictions get better closer to the time of failure.
 ### Installation
 To run the code, first download the repo locally as follows:
 ```bash
-git clone https://github.com/NervanaSystems/timeseries.git
+git clone https://github.com/NervanaSystems/aidc-2018-timeseries.git
+```
+```bash
+cd aidc-2018-timeseries
 ```
 Create and activate a python 3 virtualenv:
 ```bash
@@ -48,8 +51,8 @@ git clone https://github.com/NervanaSystems/ngraph-python.git
 ```
 Intall the nGraph library and add GPU support:
 ```bash
+cd ngraph-python
 make install
-make gpu_prepare
 ```
 
 
