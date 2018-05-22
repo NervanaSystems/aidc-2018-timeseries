@@ -282,7 +282,7 @@ class TurboFan:
         """
         try:
             import matplotlib
-            matplotlib.use('Agg')
+            #matplotlib.use('Agg')
             import matplotlib.pyplot as plt
         except ImportError:
             raise ImportError("matplotlib not found")
@@ -306,4 +306,5 @@ class TurboFan:
                 plt.title('Operating mode %d' % (jj + 1))
 
         plt.tight_layout()
+        plt.show()
         plt.savefig('%s' % os.path.join(results_dir, "trajectories.png"))
