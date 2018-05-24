@@ -1,5 +1,8 @@
 ## Predictive maintenance of aircraft engines using deep learning
 
+## Link to notebook:
+https://gist.github.com/Ajay191191/323b15b47cfa67cec97e18559ed5adc8
+
 ### Introduction
 Predictive maintenance techniques closely monitor the condition of active machinery and predict their remaining-useful-life. This is then used to assess and schedule maintenance to prolong the life of the machinery. Typically, sensors are placed on the machine to monitor acoustics, vibrations or other observations either online (while the equipment is running) or periodically while the equipment is offline. The resulting time-series data can be used in predictive modeling to determine the status of the machine. For details, see [1, 2].
 
