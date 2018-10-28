@@ -16,7 +16,7 @@ A list of papers that use the dataset are below:
 import os
 import pandas as pd
 import numpy as np
-import urllib.request
+import urllib2
 import zipfile
 
 CMAPSS_SOURCE_URL = 'https://ti.arc.nasa.gov/c/6/'
@@ -205,8 +205,8 @@ class TurboFan:
             filename = CHALLENGE_FILENAME
 
         filepath = os.path.join(work_directory, filename + ".zip")
-        req = urllib.request.Request(SOURCE_URL, headers=headers)
-        data_handle = urllib.request.urlopen(req)
+        req = urllib2.Request(SOURCE_URL, headers=headers)
+        data_handle = urllib2.urlopen(req)
         with open(filepath, "wb") as fp:
             fp.write(data_handle.read())
 
